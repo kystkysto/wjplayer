@@ -247,7 +247,7 @@ class WJPlayer {
 
     if (this.options.playerType === 'video'
       && videojs.Hls
-      && (!this.browser.IS_MOBILE || this.options.sourcesWithRes.length)) {
+      && !this.browser.IS_MOBILE) {
       this.options.enableResolutionSwitcher = true;
       // will be passed to videoJsResolutionSwitcher plugin
       this.options.videojs.plugins.videoJsResolutionSwitcher = {

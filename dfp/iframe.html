@@ -1,0 +1,20 @@
+<script type="text/javascript" src="https://yastatic.net/jquery/3.1.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+  var dfpContainerInread = '<div class="dfp-container_inread"><div id="alx-kquBH2">\
+  <iframe style="width:0;height:0" marginwidth=0 marginheight=0  scrolling=no frameborder=0></iframe>\
+  <sc' + 'ript type="text/javascript">(function() { debugger; var t = new Date / 1, fp = document.getElementById("alx-kquBH2"), pi = "alx-cont", f = fp.querySelector("iframe"), d = f.contentWindow ? f.contentWindow.document : f.contentDocument.document ? f.contentDocument.document : f.contentDocument; d.open(), d.write("<div id=" + pi + \'"></div>\'), f.contentWindow.alxConfig = {t0: t, p: fp, ph: d.getElementById(pi), cp: "", H: "kquBH2", it: [], ct: [], vast_ios:"//ad.mail.ru/vast/3930?puid1=90&puid2=580&puid3=10&puid4=1&puid5=7&puid6=41&puid7=5&puid8=7&puid9=0&puid10=1&puid11=1&puid12=1", vast_android:"//ad.mail.ru/vast/3930?puid1=90&puid2=581&puid3=10&puid4=1&puid5=7&puid6=41&puid7=5&puid8=7&puid9=0&puid10=1&puid11=1&puid12=3",        margin_top: 0, margin_bottom: 0, lock_dur: 0}, d.write("<sc" + \'ript type="text/javascript" src="https://r.webturn.ru/kquBH2;j?\' + t + \'"></sc\' + "ript>"), d.close(); })();</sc' + 'ript></div></div>';
+
+  try {
+    var $iframe = $(window.frameElement);
+
+    $iframe
+      .parent()
+      .append(dfpContainerInread);
+
+    $iframe.hide();
+
+  } catch(e) {
+    console.log(e);
+  }
+</script>
