@@ -296,7 +296,7 @@ class WJPlayer {
       }
     }
 
-    if (this.options.ads && this.options.ads.adTagUrl) {
+    if (this.options.ads && (this.options.ads.adTagUrl || this.options.ads.adsResponse)) {
       // will be passed to ima plugin
       this.options.ads = videojs.mergeOptions({
         id: this.options.playerId,
